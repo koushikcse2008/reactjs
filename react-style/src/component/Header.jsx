@@ -8,7 +8,8 @@ const Header = () => {
             <Link to="/" className="btn btn-success mr-2">Home</Link> 
             <Link to="/inline-style" className="btn btn-primary mr-2">Inline Style</Link>  
             <Link to="/internal-style" className="btn btn-warning mr-2">Internal Style</Link>
-            <Link to="/external-style" className="btn btn-danger">External Style</Link>
+            <Link to="/external-style" className="btn btn-danger mr-2">External Style</Link>
+            <Link to="/module-style" className="btn btn-primary">Module Style</Link>
             <hr />
     </>
   )

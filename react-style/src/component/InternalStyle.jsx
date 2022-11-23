@@ -8,7 +8,7 @@ const InternalStyle = () => {
     }
 
     const background = {
-        "backgroundColor": "magenta"
+        "backgroundColor": "yellow"
     }
 
     const font_size = {

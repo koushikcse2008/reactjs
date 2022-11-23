@@ -5,6 +5,7 @@ import Home from './component/Home';
 import InlineStyle from './component/InlineStyle';
 import InternalStyle from './component/InternalStyle';
 import ExternalStyle from './component/ExternalStyle';
+import ModuleStyle from './component/ModuleStyle';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/inline-style" element={<InlineStyle />} />
         <Route path="/internal-style" element={<InternalStyle />} />
         <Route path="/external-style" element={<ExternalStyle />} />
+        <Route path="/module-style" element={<ModuleStyle />} />
       </Routes>
     </Router>
     </div>
