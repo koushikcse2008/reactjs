@@ -4,6 +4,7 @@ import Header from './component/Header';
 import Home from './component/Home';
 import InlineStyle from './component/InlineStyle';
 import InternalStyle from './component/InternalStyle';
+import ExternalStyle from './component/ExternalStyle';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path="/inline-style" element={<InlineStyle />} />
         <Route path="/internal-style" element={<InternalStyle />} />
+        <Route path="/external-style" element={<ExternalStyle />} />
       </Routes>
     </Router>
     </div>
