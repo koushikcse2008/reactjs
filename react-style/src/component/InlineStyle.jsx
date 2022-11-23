@@ -7,7 +7,7 @@ const InlineStyle = () => {
     <>
     <h2>Inline Style Options</h2>
     <p style={{"color": "green"}}>Font color</p>
-    <p style={{"backgroundColor": "blue"}}>Background color</p>
+    <p style={{"backgroundColor": "blue", "color":"white"}}>Background color</p>
     <p style={{"fontSize": "50px"}}>Font Size</p>
     <p style={{"fontStyle": "italic"}}>Font Style Italic</p>
     <p><img src={logo} alt="" /></p>
