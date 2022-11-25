@@ -1,0 +1,9 @@
+.container1 {
+  background-color: #c1c1c1;
+  padding: 20px;
+  min-height: 500px;
+}
+
+.nav-item a.active {
+  border-bottom: 1px solid #d9d9d9;
+}
