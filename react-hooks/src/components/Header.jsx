@@ -17,6 +17,21 @@ const Header = () => {
         <li className="nav-item">
             <NavLink to='/use-effect' className="nav-link">Use Effect</NavLink>
         </li>
+        <li className="nav-item">
+            <a className="nav-link">Use Effect</a>
+        </li>
+        <li className="nav-item">
+            <a className="nav-link">Use Effect</a>
+        </li>
+        <li className="nav-item">
+            <a className="nav-link">Use Effect</a>
+        </li>
+        <li className="nav-item">
+            <a className="nav-link">Use Effect</a>
+        </li>
+        <li className="nav-item">
+            <a className="nav-link">Use Effect</a>
+        </li>
         </ul>
     </div>
     </nav>
