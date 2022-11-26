@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import ReactPaginate from 'react-paginate';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import Spinner from '../common/Spinner';
+// import Spinner from '../common/Spinner';
 
 import DataService from '../../service/DataService';
 
