@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Spinner from './Spinner';
+import Spinner from '../components/common/Spinner';
 import { Link } from 'react-router-dom';
 
 const UseEffect = () => {
@@ -22,7 +22,7 @@ const UseEffect = () => {
     const photoList = photos.map((photo) => { 
         const upperTitle = capitalizeFirst(photo.title);
         return (
-            <div className="card pt-0 m-2" style={{"width": "21.8rem"}}>
+            <div className="card pt-0 m-2 card-list-data" style={{"width": "15.2rem"}}>
                 <img src={photo.url} alt={photo.title} />
                 <div className="card-body">
                     <h5 className="card-title">{upperTitle}</h5>

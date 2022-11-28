@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Spinner from './Spinner';
+import Spinner from '../components/common/Spinner';
 import { Link, useParams } from 'react-router-dom';
 
 const UseEffectDetails = () => {
@@ -37,8 +37,7 @@ const UseEffectDetails = () => {
                 </div>
                 </div>
         </div>
-                    <Link to="/use-effect" className="btn btn-danger">Back to list</Link>
-        
+        <Link to="/use-effect" className="btn btn-danger" style={{marginLeft: "-7px"}}>Back to list</Link>        
         </>
     )
 }

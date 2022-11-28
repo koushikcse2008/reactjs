@@ -56,7 +56,7 @@ const UseState = () => {
         <button onClick={() => handleDecrement(1)} className="btn btn-danger mr-2">Decrement by 1</button>
         <button onClick={() => handleIncrement(5)} className="btn btn-success mr-2">Increment by 5</button>
         <button onClick={() => handleDecrement(5)} className="btn btn-danger">Decrement by 5</button>
-        <ToastContainer theme="colored" />
+        <ToastContainer />
     </p>
     </>
   )
