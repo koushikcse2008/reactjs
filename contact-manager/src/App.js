@@ -3,11 +3,11 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './component/common/Header';
 import Footer from './component/common/Footer';
-import Home from './component/core/Home';
-import AddContact from './component/core/AddContact';
-import EditContact from './component/core/EditContact';
-import ShowContact from './component/core/ShowContact.';
-import ContactList1 from './component/core/ContactList1';
+import Home from './pages/Home';
+import AddContact from './pages/AddContact';
+import EditContact from './pages/EditContact';
+import ShowContact from './pages/ShowContact.';
+import ContactList1 from './pages/ContactList1';
 
 function App() {
   return (
