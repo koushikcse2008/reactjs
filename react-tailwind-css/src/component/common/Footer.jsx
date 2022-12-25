@@ -85,7 +85,7 @@ const Footer = () => {
     </div>
 
     <div class="text-gray-700 text-center p-4">
-      Copyright &copy; 2022 - 2023. All rights reserved. <a class="text-gray-800" href="https://tailwind-elements.com/">Tailwind Elements</a>
+      Copyright &copy; 2022 - 2023. All rights reserved. <a class="text-gray-800" href="https://tailwind-elements.com/" rel="noreferrer">Tailwind Elements</a>
     </div>
   </footer>
     </>

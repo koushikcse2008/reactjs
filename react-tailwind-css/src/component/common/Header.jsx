@@ -16,7 +16,7 @@ const Header = () => {
     </svg>
     </button>
     <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
-    <a class="text-xl text-white" href="#">Tailwind CSS Learning</a>
+    <a class="text-xl text-white" href="!#">Tailwind CSS Learning</a>
 
     <ul class="navbar-nav flex flex-col pl-10 list-style-none mr-auto">
       <li class="nav-item px-2">
