@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import DataService from '../../service/DataService';
+// import DataService from '../../service/DataService';
 import { NavLink } from 'react-router-dom';
 
 /* redux data */
 import { useDispatch, useSelector } from "react-redux";
-import { FetchBlog } from "../../redux/slice/BlogSlice";
+import { FetchCategory } from "../../redux/slice/CategorySlice";
 
 const BlogSidebar = () => {
 
@@ -19,10 +19,10 @@ const BlogSidebar = () => {
     // }, []);
 
     const dispatch = useDispatch();
-    const { blogs_data } = useSelector(state => state?.blogSlice);
+    const { category_data } = useSelector(state => state?.categorySlice);
     
     useEffect(()=> {
-        dispatch(FetchBlog());
+        dispatch(FetchCategory());
     }, []);
 
   return (
@@ -40,19 +40,18 @@ const BlogSidebar = () => {
             <h3 className="sidebar-title">Categories</h3>
             <div className="sidebar-item categories">
             <ul>
-                <li><a href="!#">General <span>(25)</span></a></li>
-                <li><a href="!#">Lifestyle <span>(12)</span></a></li>
-                <li><a href="!#">Travel <span>(5)</span></a></li>
-                <li><a href="!#">Design <span>(22)</span></a></li>
-                <li><a href="!#">Creative <span>(8)</span></a></li>
-                <li><a href="!#">Educaion <span>(14)</span></a></li>
+            {
+                category_data.map((data) => (
+                <li><NavLink to={`/blog?category=${data.category}`}>{data.category} <span>({data.posts})</span></NavLink></li>
+                ))
+            }
             </ul>
             </div>
 
             <h3 className="sidebar-title">Recent Posts</h3>
             <div className="sidebar-item recent-posts">
             {
-                blogs_data.map((data) => (
+                category_data.map((data) => (
                     <div className="post-item clearfix">
                         <img src={data.image_src} alt="" />
                         <h4><NavLink to={`/blog-details/${data.id}`}>{data.name}</NavLink></h4>

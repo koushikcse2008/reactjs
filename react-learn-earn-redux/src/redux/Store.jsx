@@ -7,6 +7,7 @@ import { TeamSlice } from "./slice/TeamSlice";
 import { PricingSlice } from "./slice/PricingSlice";
 import { AboutusSlice } from "./slice/AboutusSlice";
 import { BlogSlice } from "./slice/BlogSlice";
+import { CategorySlice } from "./slice/CategorySlice";
 import { HomeSlice } from "./slice/HomeSlice";
 import { ContactSlice } from "./slice/ContactSlice";
 
@@ -20,6 +21,7 @@ export const Store = configureStore({
         pricingSlice: PricingSlice.reducer,
         aboutusSlice: AboutusSlice.reducer,
         blogSlice: BlogSlice.reducer,
+        categorySlice: CategorySlice.reducer,
         homeSlice: HomeSlice.reducer,
         contactSlice: ContactSlice.reducer,
     }

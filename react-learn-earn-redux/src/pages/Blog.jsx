@@ -5,6 +5,8 @@ import { ToastContainer } from 'react-toastify';
 import '../../node_modules/react-toastify/dist/ReactToastify.css';
 import BlogSidebar from '../components/common/BlogSidebar';
 
+import { useParams, useSearchParams } from 'react-router-dom';
+
 /* redux data */
 import { useDispatch, useSelector } from "react-redux";
 import { FetchBlog } from "../redux/slice/BlogSlice";
@@ -46,11 +48,17 @@ const Blog = ({ itemsPerPage }) => {
 
   const [itemOffset, setItemOffset] = useState(0);
 
+  const params = useParams();
+  const [searchParams, setSearchParams] = useSearchParams();
+  
   const dispatch = useDispatch();
   const { blogs_data } = useSelector(state => state?.blogSlice);
   
   useEffect(()=> {
-    dispatch(FetchBlog());
+    const category = searchParams.get("category") || '';
+    // const category = params.category;
+    // console.log(category);
+    dispatch(FetchBlog(category));
   }, []);
 
   // Simulate fetching items from another resources.

@@ -6,9 +6,11 @@ const initialState = ({
     status: 'idle'
 }); 
 
-export const FetchBlog = createAsyncThunk("fetch/blog", async () => {
+export const FetchBlog = createAsyncThunk("fetch/blog", async (category) => {
     try {
-        let res = await getApiData("blogs");
+        let api_url = (category != "") ? `blogs?category=${category}` : 'blogs';
+        let res = await getApiData(api_url);
+        // console.log(api_url);
         return res?.data;
     } catch(error) {
         console.log(error);
