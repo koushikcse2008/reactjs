@@ -18,6 +18,8 @@ const About = () => {
             <li className="list-group-item list-group-item-danger"> #1. bootstrap for ui building. </li>
             <li className="list-group-item list-group-item-danger"> #2. react-toastify to notify the user actions.</li>
             <li className="list-group-item list-group-item-danger"> #3. react-spinners for loading contents.</li>
+            <li className="list-group-item list-group-item-danger"> #4. formik and yup for form and validation.</li>
+            <li className="list-group-item list-group-item-danger"> #5. concurrently for multiple command run using a single cli command.</li>
           </ul>    
       </div>
       <p>&nbsp;</p>
