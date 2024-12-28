@@ -1,0 +1,25 @@
+{
+  "issues": [
+    {
+        "id": 1,
+        "desc": "Issue details 1",
+        "severity": "Critical",
+        "status": "Open",
+        "created_at": "2024-12-17"
+    },
+    {
+        "id": 2,
+        "desc": "Issue details 2",
+        "severity": "Major",
+        "status": "Closed",
+        "created_at": "2024-12-17"
+    },
+    {
+        "id": 3,
+        "desc": "Issue details 3",
+        "severity": "Minor",
+        "status": "In-Progress",
+        "created_at": "2024-12-17"
+    }
+  ]
+}
